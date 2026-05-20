@@ -1,0 +1,1608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jimmy Safe Place & PAWsitive Recovery — Strategic Overview</title>
+
+<!-- Open Graph Preview -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Jimmy Safe Place & PAWsitive Recovery — Strategic Overview">
+<meta property="og:description" content="Websites, grant roadmap, social media setup, and action plan. Prepared by Strange Advanced Marketing.">
+<meta property="og:image" content="https://ajsupplycollc.github.io/positive-recovery/logo_original.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Jimmy Safe Place & PAWsitive Recovery — Strategic Overview">
+<meta name="twitter:description" content="Websites, grant roadmap, social media setup, and action plan. Prepared by Strange Advanced Marketing.">
+<meta name="twitter:image" content="https://ajsupplycollc.github.io/positive-recovery/logo_original.jpg">
+<link rel="icon" href="logo_original.jpg" type="image/jpeg">
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --navy: #0f1b2d;
+  --navy-light: #162540;
+  --navy-mid: #1a2d4a;
+  --teal: #2a9d8f;
+  --teal-light: #3fc1b0;
+  --amber: #f4a261;
+  --amber-light: #f7bc8a;
+  --coral: #e76f51;
+  --white: #ffffff;
+  --white-80: rgba(255,255,255,0.8);
+  --white-60: rgba(255,255,255,0.6);
+  --white-40: rgba(255,255,255,0.4);
+  --white-20: rgba(255,255,255,0.2);
+  --white-10: rgba(255,255,255,0.1);
+  --white-05: rgba(255,255,255,0.05);
+}
+
+html, body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: var(--navy);
+  color: var(--white);
+  font-family: 'Inter', sans-serif;
+}
+
+/* ── Slide Container ── */
+.deck {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.slide {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px 100px 100px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  transform: translateX(40px);
+  background: var(--navy);
+}
+
+.slide.active {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateX(0);
+  z-index: 10;
+}
+
+.slide.exit-left {
+  opacity: 0;
+  transform: translateX(-40px);
+}
+
+/* ── Typography ── */
+h1 {
+  font-family: 'DM Serif Display', serif;
+  font-weight: 400;
+  font-size: 3.4rem;
+  line-height: 1.15;
+  margin-bottom: 20px;
+  letter-spacing: -0.5px;
+}
+
+h2 {
+  font-family: 'DM Serif Display', serif;
+  font-weight: 400;
+  font-size: 2.6rem;
+  line-height: 1.2;
+  margin-bottom: 30px;
+  letter-spacing: -0.3px;
+}
+
+h3 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 1.15rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: var(--teal);
+  margin-bottom: 14px;
+}
+
+p, li {
+  font-size: 1.25rem;
+  line-height: 1.7;
+  color: var(--white-80);
+  font-weight: 300;
+}
+
+.big-text {
+  font-size: 1.5rem;
+  line-height: 1.6;
+}
+
+.accent { color: var(--amber); }
+.teal { color: var(--teal); }
+.teal-light { color: var(--teal-light); }
+.bold { font-weight: 600; color: var(--white); }
+.italic { font-style: italic; }
+
+/* ── Decorative Elements ── */
+.gradient-line {
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--teal), var(--amber));
+  border-radius: 2px;
+  margin-bottom: 30px;
+}
+
+.gradient-line.wide {
+  width: 120px;
+}
+
+.slide-number-label {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: var(--white-40);
+  margin-bottom: 20px;
+}
+
+/* ── Cards & Grids ── */
+.card-grid {
+  display: grid;
+  gap: 24px;
+  margin-top: 20px;
+}
+
+.card-grid.cols-2 { grid-template-columns: 1fr 1fr; }
+.card-grid.cols-3 { grid-template-columns: 1fr 1fr 1fr; }
+
+.card {
+  background: var(--white-05);
+  border: 1px solid var(--white-10);
+  border-radius: 16px;
+  padding: 30px;
+  transition: border-color 0.3s ease;
+}
+
+.card:hover {
+  border-color: var(--white-20);
+}
+
+.card h4 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.35rem;
+  font-weight: 400;
+  margin-bottom: 10px;
+  color: var(--white);
+}
+
+.card p, .card li {
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.card .amount {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.8rem;
+  color: var(--amber);
+  margin-bottom: 6px;
+}
+
+.card .status {
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  padding: 4px 12px;
+  border-radius: 20px;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.status.watch { background: rgba(244,162,97,0.15); color: var(--amber); }
+.status.rolling { background: rgba(42,157,143,0.15); color: var(--teal-light); }
+.status.upcoming { background: rgba(255,255,255,0.08); color: var(--white-60); }
+
+/* ── Grant Row ── */
+.grant-row {
+  display: flex;
+  align-items: center;
+  padding: 18px 24px;
+  background: var(--white-05);
+  border-radius: 12px;
+  margin-bottom: 12px;
+  border-left: 4px solid var(--teal);
+}
+
+.grant-row .grant-name {
+  flex: 1;
+  font-weight: 600;
+  font-size: 1.15rem;
+  color: var(--white);
+}
+
+.grant-row .grant-amount {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.3rem;
+  color: var(--amber);
+  min-width: 200px;
+  text-align: right;
+  margin-right: 30px;
+}
+
+.grant-row .grant-status {
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--white-60);
+  min-width: 180px;
+  text-align: right;
+}
+
+.grant-row.amber-border { border-left-color: var(--amber); }
+
+/* ── Checklist ── */
+.checklist {
+  list-style: none;
+  padding: 0;
+}
+
+.checklist li {
+  display: flex;
+  align-items: center;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--white-10);
+  font-size: 1.25rem;
+}
+
+.checklist li:last-child { border-bottom: none; }
+
+.check-box {
+  width: 28px;
+  height: 28px;
+  border: 2px solid var(--teal);
+  border-radius: 6px;
+  margin-right: 20px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ── Timeline ── */
+.timeline {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 24px;
+  margin-top: 20px;
+}
+
+.timeline-block {
+  position: relative;
+  padding: 28px;
+  background: var(--white-05);
+  border-radius: 16px;
+  border-top: 3px solid var(--teal);
+}
+
+.timeline-block:nth-child(2) { border-top-color: var(--teal-light); }
+.timeline-block:nth-child(3) { border-top-color: var(--amber); }
+.timeline-block:nth-child(4) { border-top-color: var(--coral); }
+
+.timeline-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 16px;
+}
+
+.timeline-block:nth-child(1) .timeline-label { color: var(--teal); }
+.timeline-block:nth-child(2) .timeline-label { color: var(--teal-light); }
+.timeline-block:nth-child(3) .timeline-label { color: var(--amber); }
+.timeline-block:nth-child(4) .timeline-label { color: var(--coral); }
+
+.timeline-block ul {
+  list-style: none;
+  padding: 0;
+}
+
+.timeline-block li {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  padding: 5px 0;
+  color: var(--white-80);
+  padding-left: 14px;
+  position: relative;
+}
+
+.timeline-block li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 12px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--white-40);
+}
+
+/* ── Dual Lane Visual ── */
+.dual-lanes {
+  display: grid;
+  grid-template-columns: 1fr 60px 1fr;
+  gap: 0;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.lane {
+  padding: 36px;
+  border-radius: 20px;
+  background: var(--white-05);
+  border: 1px solid var(--white-10);
+}
+
+.lane h4 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.lane ul {
+  list-style: none;
+  padding: 0;
+}
+
+.lane li {
+  font-size: 1.05rem;
+  padding: 8px 0;
+  color: var(--white-80);
+  padding-left: 18px;
+  position: relative;
+}
+
+.lane li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 15px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.lane.teal-lane li::before { background: var(--teal); }
+.lane.amber-lane li::before { background: var(--amber); }
+
+.lane-connector {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: var(--white-40);
+  font-weight: 300;
+}
+
+/* ── URL display ── */
+.url-block {
+  display: inline-block;
+  background: var(--white-05);
+  border: 1px solid var(--white-10);
+  border-radius: 10px;
+  padding: 12px 24px;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--teal-light);
+  letter-spacing: 0.3px;
+  margin: 6px 8px 6px 0;
+}
+
+/* ── Logo styling ── */
+.logo-container {
+  width: 140px;
+  height: 140px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 2px solid var(--white-20);
+  margin-bottom: 30px;
+  background: var(--white-10);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.logo-container-small {
+  width: 90px;
+  height: 90px;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 2px solid var(--white-20);
+  background: var(--white-10);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-container-small img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ── Feature list (with icons) ── */
+.feature-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px 40px;
+}
+
+.feature-list li {
+  font-size: 1.15rem;
+  padding: 10px 0 10px 30px;
+  position: relative;
+  color: var(--white-80);
+}
+
+.feature-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 17px;
+  width: 14px;
+  height: 2px;
+  background: var(--teal);
+  border-radius: 1px;
+}
+
+/* ── Social list ── */
+.social-list {
+  list-style: none;
+  padding: 0;
+}
+
+.social-list li {
+  font-size: 1.2rem;
+  padding: 14px 0 14px 30px;
+  position: relative;
+  color: var(--white-80);
+  border-bottom: 1px solid var(--white-05);
+}
+
+.social-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 22px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid var(--teal);
+}
+
+/* ── Highlight stat ── */
+.stat-highlight {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  background: linear-gradient(135deg, rgba(42,157,143,0.12), rgba(244,162,97,0.08));
+  border: 1px solid var(--white-10);
+  border-radius: 20px;
+  padding: 30px 40px;
+  margin: 20px 0;
+}
+
+.stat-number {
+  font-family: 'DM Serif Display', serif;
+  font-size: 4rem;
+  color: var(--amber);
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 1.3rem;
+  color: var(--white-80);
+  font-weight: 300;
+}
+
+.stat-label strong {
+  color: var(--white);
+  font-weight: 600;
+}
+
+/* ── Slide-specific backgrounds ── */
+.slide-title {
+  text-align: center;
+  align-items: center;
+  background: linear-gradient(160deg, #0a1628 0%, #0f1b2d 40%, #132741 100%);
+}
+
+.slide-title::before {
+  content: '';
+  position: absolute;
+  top: -200px;
+  right: -200px;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(42,157,143,0.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.slide-title::after {
+  content: '';
+  position: absolute;
+  bottom: -200px;
+  left: -100px;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(244,162,97,0.06) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.slide-closing {
+  text-align: center;
+  align-items: center;
+  background: linear-gradient(160deg, #0a1628 0%, #0f1b2d 40%, #132741 100%);
+}
+
+/* ── FARR slide special ── */
+.farr-highlight {
+  background: linear-gradient(135deg, rgba(42,157,143,0.15), rgba(42,157,143,0.05));
+  border: 1px solid rgba(42,157,143,0.3);
+  border-radius: 20px;
+  padding: 40px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.farr-highlight h2 {
+  font-size: 2.2rem;
+  color: var(--white);
+  margin-bottom: 10px;
+}
+
+.farr-highlight p {
+  font-size: 1.2rem;
+  color: var(--white-80);
+}
+
+/* ── Big quote / callout ── */
+.callout {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.8rem;
+  color: var(--white);
+  font-style: italic;
+  line-height: 1.4;
+  padding: 30px 0;
+  border-left: 4px solid var(--amber);
+  padding-left: 30px;
+  margin: 20px 0;
+}
+
+/* ── Progress Bar ── */
+.progress-bar-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 50px;
+  background: rgba(10, 20, 38, 0.95);
+  border-top: 1px solid var(--white-10);
+  display: flex;
+  align-items: center;
+  padding: 0 40px;
+  z-index: 100;
+  backdrop-filter: blur(10px);
+}
+
+.progress-track {
+  flex: 1;
+  height: 3px;
+  background: var(--white-10);
+  border-radius: 2px;
+  margin: 0 20px;
+  position: relative;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--teal), var(--amber));
+  border-radius: 2px;
+  transition: width 0.4s ease;
+}
+
+.slide-counter {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--white-40);
+  letter-spacing: 1px;
+  min-width: 60px;
+}
+
+.nav-hint {
+  font-size: 0.7rem;
+  color: var(--white-20);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* ── Dot indicators ── */
+.dot-indicators {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--white-20);
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.dot.active {
+  background: var(--teal);
+  transform: scale(1.4);
+}
+
+/* ── Scrollable content area ── */
+.slide-content-scroll {
+  overflow-y: auto;
+  max-height: calc(100vh - 180px);
+  padding-right: 20px;
+}
+
+.slide-content-scroll::-webkit-scrollbar {
+  width: 4px;
+}
+
+.slide-content-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.slide-content-scroll::-webkit-scrollbar-thumb {
+  background: var(--white-20);
+  border-radius: 2px;
+}
+
+/* ── Subtle background patterns ── */
+.bg-pattern {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40%;
+  height: 100%;
+  pointer-events: none;
+  opacity: 0.03;
+  background-image:
+    radial-gradient(circle at 30% 20%, var(--teal) 1px, transparent 1px),
+    radial-gradient(circle at 70% 60%, var(--amber) 1px, transparent 1px),
+    radial-gradient(circle at 50% 80%, var(--teal) 1px, transparent 1px);
+  background-size: 60px 60px, 80px 80px, 40px 40px;
+}
+
+/* ── Connectors: FARR unlocks ── */
+.unlock-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.unlock-item {
+  background: var(--white-05);
+  border: 1px solid var(--white-10);
+  border-radius: 14px;
+  padding: 22px;
+  text-align: center;
+}
+
+.unlock-item .unlock-name {
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: var(--white);
+  margin-bottom: 6px;
+}
+
+.unlock-item .unlock-desc {
+  font-size: 0.85rem;
+  color: var(--white-60);
+  line-height: 1.4;
+}
+
+/* ── Brand slide two-col ── */
+.brand-two-col {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 50px;
+  align-items: start;
+  margin-top: 20px;
+}
+
+/* ── Grant/Resource Links ── */
+a.grant-link {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+a.grant-link:hover {
+  border-bottom-color: var(--white-40);
+  color: var(--white);
+}
+
+.grant-row a.grant-link {
+  color: var(--white);
+}
+
+.grant-row a.grant-link:hover {
+  color: var(--teal-light);
+  border-bottom-color: var(--teal-light);
+}
+
+a.grant-link.teal-link {
+  color: var(--teal-light);
+}
+
+a.grant-link.teal-link:hover {
+  color: var(--teal);
+  border-bottom-color: var(--teal);
+}
+
+a.grant-link.amber-link {
+  color: var(--amber);
+}
+
+a.grant-link.amber-link:hover {
+  color: var(--amber-light);
+  border-bottom-color: var(--amber-light);
+}
+
+.url-block a.grant-link {
+  color: var(--teal-light);
+}
+
+.url-block a.grant-link:hover {
+  color: var(--white);
+  border-bottom-color: var(--teal-light);
+}
+
+.timeline-block a.grant-link {
+  color: var(--white-80);
+}
+
+.timeline-block a.grant-link:hover {
+  color: var(--white);
+  border-bottom-color: var(--white-40);
+}
+
+/* ── Closing contact ── */
+.contact-block {
+  margin-top: 30px;
+  padding: 30px 0;
+  border-top: 1px solid var(--white-10);
+}
+
+.contact-block p {
+  font-size: 1.1rem;
+  color: var(--white-60);
+  text-align: center;
+}
+
+.contact-block .contact-name {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.6rem;
+  color: var(--white);
+  margin-bottom: 4px;
+}
+
+.contact-block .contact-company {
+  color: var(--teal);
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+/* ── Overview three-column ── */
+.overview-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 28px;
+  margin-top: 10px;
+}
+
+.overview-col {
+  background: var(--white-05);
+  border: 1px solid var(--white-10);
+  border-radius: 20px;
+  padding: 32px;
+  text-align: center;
+}
+
+.overview-col .col-icon {
+  font-size: 2.5rem;
+  margin-bottom: 16px;
+  display: block;
+}
+
+.overview-col h4 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+  color: var(--white);
+}
+
+.overview-col p {
+  font-size: 1rem;
+  color: var(--white-60);
+  line-height: 1.5;
+}
+
+.overview-col .col-count {
+  font-family: 'DM Serif Display', serif;
+  font-size: 2.8rem;
+  color: var(--teal);
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+/* ══════════════════════════════════════════════════════════ */
+/* ── RESPONSIVE / MOBILE ── */
+/* ══════════════════════════════════════════════════════════ */
+
+@media (max-width: 1024px) {
+  .slide { padding: 40px 50px 90px; }
+  h1 { font-size: 2.6rem; }
+  h2 { font-size: 2rem; }
+  .card-grid.cols-2, .card-grid.cols-3 { grid-template-columns: 1fr; }
+  .overview-cols { grid-template-columns: 1fr 1fr; gap: 16px; }
+  .timeline { grid-template-columns: 1fr 1fr; gap: 16px; }
+  .dual-lanes { grid-template-columns: 1fr; gap: 16px; }
+  .lane-connector { display: none; }
+  .feature-list { grid-template-columns: 1fr; gap: 6px 0; }
+  .unlock-grid { grid-template-columns: 1fr 1fr; }
+  .brand-two-col { grid-template-columns: 1fr; gap: 24px; }
+}
+
+@media (max-width: 768px) {
+  .slide {
+    padding: 24px 20px 80px;
+  }
+
+  .slide-title {
+    padding: 30px 20px 80px;
+  }
+
+  h1 { font-size: 2rem; margin-bottom: 14px; }
+  h2 { font-size: 1.6rem; margin-bottom: 20px; }
+  h3 { font-size: 0.95rem; letter-spacing: 2px; margin-bottom: 10px; }
+  p, li { font-size: 1.05rem; line-height: 1.6; }
+  .big-text { font-size: 1.2rem; }
+
+  .slide-content-scroll {
+    max-height: calc(100vh - 130px);
+    padding-right: 8px;
+  }
+
+  .card { padding: 20px; border-radius: 12px; }
+  .card h4 { font-size: 1.15rem; }
+  .card p, .card li { font-size: 0.95rem; }
+  .card .amount { font-size: 1.4rem; }
+
+  .grant-row {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 14px 16px;
+    gap: 6px;
+  }
+
+  .grant-row .grant-name { font-size: 1.05rem; }
+  .grant-row .grant-amount {
+    min-width: auto;
+    text-align: left;
+    margin-right: 0;
+    font-size: 1.1rem;
+  }
+  .grant-row .grant-status {
+    min-width: auto;
+    text-align: left;
+  }
+
+  .overview-cols { grid-template-columns: 1fr; gap: 12px; }
+  .overview-col { padding: 20px; border-radius: 14px; }
+  .overview-col .col-count { font-size: 2.2rem; }
+  .overview-col h4 { font-size: 1.1rem; }
+  .overview-col p { font-size: 0.9rem; }
+
+  .timeline { grid-template-columns: 1fr; gap: 14px; }
+  .timeline-block { padding: 20px; }
+  .timeline-block li { font-size: 0.9rem; }
+
+  .unlock-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+  .unlock-item { padding: 16px; }
+  .unlock-item .unlock-name { font-size: 0.95rem; }
+  .unlock-item .unlock-desc { font-size: 0.8rem; }
+
+  .feature-list { grid-template-columns: 1fr; gap: 4px 0; }
+  .feature-list li { font-size: 1rem; padding: 8px 0 8px 24px; }
+  .feature-list li::before { top: 14px; width: 10px; }
+
+  .social-list li { font-size: 1rem; padding: 10px 0 10px 24px; }
+  .social-list li::before { top: 17px; width: 10px; height: 10px; }
+
+  .checklist li { font-size: 1.05rem; padding: 12px 0; }
+  .check-box { width: 24px; height: 24px; margin-right: 14px; }
+
+  .stat-highlight { flex-direction: column; padding: 20px; gap: 14px; text-align: center; }
+  .stat-number { font-size: 3rem; }
+  .stat-label { font-size: 1.1rem; }
+
+  .farr-highlight { padding: 24px; }
+  .farr-highlight h2 { font-size: 1.5rem; }
+  .farr-highlight p { font-size: 1rem; }
+
+  .callout { font-size: 1.3rem; padding: 20px; padding-left: 20px; }
+
+  .dual-lanes { grid-template-columns: 1fr; gap: 14px; }
+  .lane { padding: 24px; }
+  .lane h4 { font-size: 1.2rem; }
+  .lane li { font-size: 0.95rem; }
+  .lane-connector { display: none; }
+
+  .brand-two-col {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .brand-two-col .logo-container {
+    margin: 0 auto;
+  }
+
+  .url-block {
+    font-size: 0.85rem;
+    padding: 8px 14px;
+    word-break: break-all;
+  }
+
+  .logo-container {
+    width: 100px;
+    height: 100px;
+    border-radius: 16px;
+    margin-bottom: 20px;
+  }
+
+  .logo-container-small {
+    width: 70px;
+    height: 70px;
+  }
+
+  /* Progress bar mobile */
+  .progress-bar-container {
+    height: 44px;
+    padding: 0 16px;
+  }
+
+  .dot {
+    width: 10px;
+    height: 10px;
+  }
+
+  .dot.active {
+    transform: scale(1.3);
+  }
+
+  .nav-hint { display: none; }
+
+  .slide-counter { font-size: 0.75rem; min-width: 50px; }
+
+  .contact-block .contact-name { font-size: 1.3rem; }
+  .contact-block .contact-company { font-size: 1rem; }
+}
+
+@media (max-width: 480px) {
+  .slide { padding: 16px 14px 76px; }
+  .slide-title { padding: 20px 14px 76px; }
+
+  h1 { font-size: 1.6rem; }
+  h2 { font-size: 1.35rem; }
+  p, li { font-size: 0.95rem; }
+
+  .unlock-grid { grid-template-columns: 1fr; }
+
+  .slide-title h1 { font-size: 1.8rem; }
+
+  .grant-row .grant-name { font-size: 0.95rem; }
+  .grant-row .grant-amount { font-size: 1rem; }
+}
+</style>
+</head>
+<body>
+
+<div class="deck" id="deck">
+
+  <!-- ═══════════════════════════════════════ SLIDE 1 — TITLE ═══════════════════════════════════════ -->
+  <div class="slide slide-title active" data-slide="0">
+    <div class="bg-pattern"></div>
+    <div class="logo-container" style="margin: 0 auto 30px;">
+      <img src="logo_original.jpg" alt="PAWsitive Recovery Logo" onerror="this.parentElement.innerHTML='<span style=&quot;font-size:3rem;color:var(--teal)&quot;>&#x1f43e;</span>'">
+    </div>
+    <h1 style="font-size: 3.6rem; margin-bottom: 10px;">Jimmy Safe Place<br>&amp; PAWsitive Recovery</h1>
+    <div class="gradient-line wide" style="margin: 20px auto;"></div>
+    <p style="font-size: 1.5rem; color: var(--white-80); font-weight: 300; margin-bottom: 30px;">Strategic Overview &amp; Next Steps</p>
+    <p style="font-size: 1.1rem; color: var(--white-40); margin-bottom: 6px;">Prepared for <span class="bold">James Gutches</span></p>
+    <p style="font-size: 1rem; color: var(--white-40);">By Jereme Strange &mdash; Strange Advanced Marketing</p>
+    <p style="font-size: 0.9rem; color: var(--white-20); margin-top: 14px; letter-spacing: 2px; text-transform: uppercase;">May 2026</p>
+  </div>
+
+  <!-- ═══════════════════════════════════════ SLIDE 2 — WHAT WE BUILT ═══════════════════════════════════════ -->
+  <div class="slide" data-slide="1">
+    <div class="bg-pattern"></div>
+    <div class="slide-content-scroll">
+      <h3>What We Built</h3>
+      <div class="gradient-line"></div>
+      <h2>Two Professional Websites &mdash; Live and Ready</h2>
+      <div class="card-grid cols-2" style="margin-bottom: 30px;">
+        <div class="card" style="border-top: 3px solid var(--teal);">
+          <h4>Jimmy Safe Place of South Florida</h4>
+          <p style="color: var(--white-60); margin-bottom: 14px;">Sober living &amp; halfway house facility</p>
+          <div class="url-block"><a class="grant-link" href="https://ajsupplycollc.github.io/jimmy-safe-place/" target="_blank" rel="noopener">ajsupplycollc.github.io/jimmy-safe-place</a></div>
+        </div>
+        <div class="card" style="border-top: 3px solid var(--amber);">
+          <h4>PAWsitive Recovery, Inc.</h4>
+          <p style="color: var(--white-60); margin-bottom: 14px;">501(c)(3) animal rescue &amp; rehabilitation</p>
+          <div class="url-block"><a class="grant-link" href="https://ajsupplycollc.github.io/positive-recovery/" target="_blank" rel="noopener">ajsupplycollc.github.io/positive-recovery</a></div>
+        </div>
+      </div>
+      <p style="font-size: 1rem; color: var(--white-40); margin-bottom: 16px; text-transform: uppercase; letter-spacing: 2px; font-weight: 600;">Both sites include</p>
+      <ul class="feature-list">
+        <li>SEO optimization for local search</li>
+        <li>Contact forms for inquiries</li>
+        <li>Fully mobile responsive</li>
+        <li>FARR accreditation section</li>
+        <li>Social preview images (OG tags)</li>
+        <li>Professional, modern design</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════ SLIDE 3 — YOUR BRAND ═══════════════════════════════════════ -->
+  <div class="slide" data-slide="2">
+    <div class="bg-pattern"></div>
+    <div class="slide-content-scroll">
+      <h3>Your Brand</h3>
+      <div class="gradient-line"></div>
+      <h2>Logo &amp; Brand Assets</h2>
+      <div class="brand-two-col">
+        <div>
+          <div class="logo-container" style="width: 180px; height: 180px; border-radius: 24px;">
+            <img src="logo_original.jpg" alt="PAWsitive Recovery Logo" onerror="this.parentElement.innerHTML='<span style=&quot;font-size:4rem;color:var(--teal)&quot;>&#x1f43e;</span>'">
+          </div>
+        </div>
+        <div>
+          <ul class="social-list">
+            <li><span class="bold">Cleaned and formatted</span> for professional web use</li>
+            <li><span class="bold">Applied across both websites</span> &mdash; consistent branding</li>
+            <li><span class="bold">Ready for social media</span> profiles and pages</li>
+            <li><span class="bold">Open Graph images</span> configured for link sharing previews</li>
+            <li><span class="bold">Favicons</span> set up for browser tabs and bookmarks</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════ SLIDE 4 — FARR ACCREDITATION ═══════════════════════════════════════ -->
+  <div class="slide" data-slide="3">
+    <div class="bg-pattern"></div>
+    <div class="slide-content-scroll">
+      <h3>Priority #1</h3>
+      <div class="gradient-line"></div>
+      <h2>FARR Accreditation &mdash; The Master Key</h2>
+      <div class="farr-highlight">
+        <h2 style="font-size: 2rem;">FARR Certification Unlocks Nearly Every Government Grant</h2>
+        <p>Florida Association of Recovery Residences &mdash; 60 to 90 day certification process</p>
+        <p style="margin-top: 10px;"><a class="grant-link teal-link" href="https://www.farronline.org" target="_blank" rel="noopener" style="font-weight: 600;">farronline.org</a></p>
+      </div>
+      <p style="font-size: 1rem; color: var(--white-40); margin: 24px 0 16px; text-transform: uppercase; letter-spacing: 2px; font-weight: 600;">Required or strongly preferred by</p>
+      <div class="unlock-grid">
+        <div class="unlock-item">
+          <div class="unlock-name">SAMHSA</div>
+          <div class="unlock-desc">Federal substance abuse &amp; mental health grants</div>
+        </div>
+        <div class="unlock-item">
+          <div class="unlock-name">HUD</div>
+          <div class="unlock-desc">Housing &amp; Urban Development recovery programs</div>
+        </div>
+        <div class="unlock-item">
+          <div class="unlock-name">Florida DCF</div>
+          <div class="unlock-desc">State opioid response &amp; recovery housing funds</div>
+        </div>
+        <div class="unlock-item">
+          <div class="unlock-name">Opioid Settlement</div>
+          <div class="unlock-desc">Statewide settlement fund distribution</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════ SLIDE 5 — GRANT OVERVIEW ═══════════════════════════════════════ -->
+  <div class="slide" data-slide="4">
+    <div class="bg-pattern"></div>
+    <div class="slide-content-scroll">
+      <h3>Funding Landscape</h3>
+      <div class="gradient-line"></div>
+      <h2>Grant Opportunities Overview</h2>
+      <div class="stat-highlight">
+        <div class="stat-number">16</div>
+        <div class="stat-label"><strong>grants identified</strong> across 3 categories<br><span class="accent">Multiple funding pathways</span> from federal, state &amp; private sources</div>
+      </div>
+      <div class="overview-cols">
+        <div class="overview-col" style="border-top: 3px solid var(--teal);">
+          <div class="col-count">6</div>
+          <h4>Recovery Housing</h4>
+          <p>Federal and state grants for sober living facilities and recovery residences</p>
+        </div>
+        <div class="overview-col" style="border-top: 3px solid var(--amber);">
+          <div class="col-count">5</div>
+          <h4>Animal Welfare</h4>
+          <p>National foundations supporting animal rescue, shelter, and rehabilitation</p>
+        </div>
+        <div class="overview-col" style="border-top: 3px solid var(--coral);">
+          <div class="col-count">5</div>
+          <h4>South Florida Regional</h4>
+          <p>Local foundations and coalitions with Broward County focus</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════ SLIDE 6 — RECOVERY HOUSING GRANTS ═══════════════════════════════════════ -->
+  <div class="slide" data-slide="5">
+    <div class="bg-pattern"></div>
+    <div class="slide-content-scroll">
+      <h3>Recovery Housing Grants</h3>
+      <div class="gradient-line"></div>
+      <h2>Top Federal &amp; State Funding Sources</h2>
+      <div style="margin-top: 24px;">
+        <div class="grant-row">
+          <div class="grant-name"><a class="grant-link" href="https://www.samhsa.gov/grants/grant-announcements/ti-24-003" target="_blank" rel="noopener">SAMHSA BCOR</a></div>
+          <div class="grant-amount">Up to $300K/yr</div>
+          <div class="grant-status"><span class="status watch">Watch FY2026</span></div>
+        </div>
+        <div class="grant-row">
+          <div class="grant-name"><a class="grant-link" href="https://bbhcflorida.org" target="_blank" rel="noopener">FL Opioid Settlement (via BBHC)</a></div>
+          <div class="grant-amount">Provider contracts</div>
+          <div class="grant-status"><span class="status rolling">FARR required</span></div>
+        </div>
+        <div class="grant-row">
+          <div class="grant-name"><a class="grant-link" href="https://www.hudexchange.info/programs/coc/" target="_blank" rel="noopener">HUD Continuum of Care</a></div>
+          <div class="grant-amount">Via Broward CoC</div>
+          <div class="grant-status"><span class="status upcoming">FY2026 NOFO expected</span></div>
+        </div>
+        <div class="grant-row">
+          <div class="grant-name"><a class="grant-link" href="https://jimmoranfoundation.org/grant/guidelines/" target="_blank" rel="noopener">Jim Moran Foundation</a></div>
+          <div class="grant-amount">$35K &ndash; $1M</div>
+          <div class="grant-status"><span class="status rolling">OPEN &mdash; Rolling LOI</span></div>
+        </div>
+        <div class="grant-row">
+          <div class="grant-name"><a class="grant-link" href="https://bja.ojp.gov/funding/current" target="_blank" rel="noopener">Second Chance Act (DOJ)</a></div>
+          <div class="grant-amount">Up to $1M</div>
+          <div class="grant-status"><span class="status watch">Watch for FY2026</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════ SLIDE 7 — ANIMAL WELFARE GRANTS ═══════════════════════════════════════ -->
+  <div class="slide" data-slide="6">
+    <div class="bg-pattern"></div>
+    <div class="slide-content-scroll">
+      <h3>Animal Welfare Grants</h3>
+      <div class="gradient-line"></div>
+      <h2>National Foundation Funding Sources</h2>
+      <div style="margin-top: 24px;">
+        <div class="grant-row amber-border">
+          <div class="grant-name"><a class="grant-link" href="https://petcolove.org/shelter-partners/grants/" target="_blank" rel="noopener">Petco Love</a></div>
+          <div class="grant-amount">$5K &ndash; $100K</div>
+          <div class="grant-status"><span class="status watch">Next cycle Feb 2027</span></div>
+        </div>
+        <div class="grant-row amber-border">
+          <div class="grant-name"><a class="grant-link" href="https://petsmartcharities.org/pro/grants" target="_blank" rel="noopener">PetSmart Charities</a></div>
+          <div class="grant-amount">Up to $75K</div>
+          <div class="grant-status"><span class="status upcoming">Adoption Growth Oct 2026</span></div>
+        </div>
+        <div class="grant-row amber-border">
+          <div class="grant-name"><a class="grant-link" href="https://www.banfieldfoundation.org/Banfield-Foundation-Grant-Programs" target="_blank" rel="noopener">Banfield Foundation</a></div>
+          <div class="grant-amount">$5K &ndash; $15K</div>
+          <div class="grant-status"><span class="status upcoming">Deadline Jul 1, 2026</span></div>
+        </div>
+        <div class="grant-row amber-border">
+          <div class="grant-name"><a class="grant-link" href="https://bestfriends.org/network/partner-perk/rachael-ray-save-them-all-grants" target="_blank" rel="noopener">Rachael Ray / Best Friends</a></div>
+          <div class="grant-amount">Up to $50K</div>
+          <div class="grant-status"><span class="status watch">Opens Aug 2026</span></div>
+        </div>
+        <div class="grant-row amber-border">
+          <div class="grant-name"><a class="grant-link" href="https://maddiesfund.org/grant-opportunities.htm" target="_blank" rel="noopener">Maddie's Fund</a></div>
+          <div class="grant-amount">Up to $10K/mo</div>
+          <div class="grant-status"><span class="status rolling">Rolling</span></div>
+        </div>
+      </div>
+      <div class="callout" style="margin-top: 30px;">
+        The dual model &mdash; human recovery combined with animal rescue &mdash; is fundable from both lanes simultaneously. That is rare and powerful.
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════ SLIDE 8 — SOUTH FLORIDA REGIONAL ═══════════════════════════════════════ -->
+  <div class="slide" data-slide="7">
+    <div class="bg-pattern"></div>
+    <div class="slide-content-scroll">
+      <h3>South Florida Regional</h3>
+      <div class="gradient-line"></div>
+      <h2>Local Foundations &amp; Coalitions</h2>
+      <div style="margin-top: 24px;">
+        <div class="grant-row" style="border-left-color: var(--coral);">
+          <div class="grant-name"><a class="grant-link" href="https://hfsf.org" target="_blank" rel="noopener">Health Foundation of South Florida</a></div>
+          <div class="grant-amount">Multi-year</div>
+          <div class="grant-status"><span class="status rolling">Inquiry-based, anytime</span></div>
+        </div>
+        <div class="grant-row" style="border-left-color: var(--coral);">
+          <div class="grant-name"><a class="grant-link" href="https://cfbroward.org/receive/apply-for-grants" target="_blank" rel="noopener">Community Foundation of Broward</a></div>
+          <div class="grant-amount">Varies</div>
+          <div class="grant-status"><span class="status watch">Twice per year</span></div>
+        </div>
+        <div class="grant-row" style="border-left-color: var(--coral);">
+          <div class="grant-name"><a class="grant-link" href="https://bbhcflorida.org" target="_blank" rel="noopener">United Way Broward / BHC</a></div>
+          <div class="grant-amount">Varies</div>
+          <div class="grant-status"><span class="status rolling">Rolling RFPs</span></div>
+        </div>
+        <div class="grant-row" style="border-left-color: var(--coral);">
+          <div class="grant-name"><a class="grant-link" href="https://myflfamilies.com/services/samh/prevention-partnership-grants" target="_blank" rel="noopener">Florida DCF Prevention Partnership</a></div>
+          <div class="grant-amount">Varies</div>
+          <div class="grant-status"><span class="status watch">Annual cycle</span></div>
+        </div>
+      </div>
+      <p style="margin-top: 30px; font-size: 1.1rem; color: var(--white-60);">These funders prioritize <span class="bold">Broward County organizations</span> with established community ties &mdash; your location is an advantage.</p>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════ SLIDE 9 — DUAL MODEL ADVANTAGE ═══════════════════════════════════════ -->
+  <div class="slide" data-slide="8">
+    <div class="bg-pattern"></div>
+    <div class="slide-content-scroll">
+      <h3>Competitive Edge</h3>
+      <div class="gradient-line"></div>
+      <h2>The Dual Model Advantage</h2>
+      <p class="big-text" style="margin-bottom: 30px;">PAWsitive Recovery's model is fundable from <span class="accent bold">two separate lanes</span> simultaneously.</p>
+      <div class="dual-lanes">
+        <div class="lane teal-lane">
+          <h4 style="color: var(--teal);">Lane 1: Animal Welfare Funders</h4>
+          <ul>
+            <li>Petco Love</li>
+            <li>PetSmart Charities</li>
+            <li>ASPCA</li>
+            <li>Maddie's Fund</li>
+            <li>HABRI</li>
+          </ul>
+        </div>
+        <div class="lane-connector">+</div>
+        <div class="lane amber-lane">
+          <h4 style="color: var(--amber);">Lane 2: Human Services Funders</h4>
+          <ul>
+            <li>SAMHSA</li>
+            <li>Florida DCF</li>
+            <li>HUD</li>
+            <li>Opioid Settlement Funds</li>
+            <li>Health Foundation of South FL</li>
+          </ul>
+        </div>
+      </div>
+      <div class="callout" style="margin-top: 30px; text-align: center; border-left: none; border-top: 4px solid var(--amber); padding-top: 20px; padding-left: 0;">
+        Most organizations can only access one lane. You can access both.
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════ SLIDE 10 — SOCIAL MEDIA SETUP ═══════════════════════════════════════ -->
+  <div class="slide" data-slide="9">
+    <div class="bg-pattern"></div>
+    <div class="slide-content-scroll">
+      <h3>Next Phase</h3>
+      <div class="gradient-line"></div>
+      <h2>Social Media Setup</h2>
+      <p class="big-text" style="margin-bottom: 20px;">We will set up <span class="bold">Instagram</span> and <span class="bold">Facebook</span> for PAWsitive Recovery &mdash; ready for your team to start posting.</p>
+      <div class="card-grid cols-2">
+        <div class="card">
+          <h4>Profile Setup</h4>
+          <ul class="social-list" style="margin-top: 10px;">
+            <li>Profile photo and cover photo</li>
+            <li>Bio and description</li>
+            <li>Contact information linked</li>
+            <li>Website URLs connected</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h4>Content Structure</h4>
+          <ul class="social-list" style="margin-top: 10px;">
+            <li>Highlight categories: Available Animals, Success Stories, Adoption Updates</li>
+            <li>Photo submission system for adopters</li>
+            <li>Simple posting guide for the team</li>
+          </ul>
+        </div>
+      </div>
+      <p style="margin-top: 24px; font-size: 1.15rem; color: var(--teal); font-weight: 500; text-align: center;">Set up for success &mdash; your team just needs to post.</p>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════ SLIDE 11 — WHAT WE NEED FROM YOU ═══════════════════════════════════════ -->
+  <div class="slide" data-slide="10">
+    <div class="bg-pattern"></div>
+    <div class="slide-content-scroll">
+      <h3>Action Items</h3>
+      <div class="gradient-line"></div>
+      <h2>What We Need From You</h2>
+      <div style="max-width: 700px; margin-top: 20px;">
+        <ul class="checklist">
+          <li>
+            <div class="check-box"></div>
+            <span><span class="bold">EIN document</span> &mdash; needed for grant applications</span>
+          </li>
+          <li>
+            <div class="check-box"></div>
+            <span><span class="bold">Phone number</span> &mdash; for website contact sections</span>
+          </li>
+          <li>
+            <div class="check-box"></div>
+            <span><span class="bold">Photos</span> &mdash; facilities, team members, animals</span>
+          </li>
+          <li>
+            <div class="check-box"></div>
+            <span><span class="bold">Confirm:</span> Has the FARR application been submitted?</span>
+          </li>
+          <li>
+            <div class="check-box"></div>
+            <span><span class="bold">Confirm:</span> Is 501(c)(3) status active and current?</span>
+          </li>
+          <li>
+            <div class="check-box"></div>
+            <span><span class="bold">Confirm:</span> Broward County location for first home?</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════ SLIDE 12 — ACTION PLAN / TIMELINE ═══════════════════════════════════════ -->
+  <div class="slide" data-slide="11">
+    <div class="bg-pattern"></div>
+    <div class="slide-content-scroll">
+      <h3>Roadmap</h3>
+      <div class="gradient-line"></div>
+      <h2>Action Plan &amp; Timeline</h2>
+      <div class="timeline">
+        <div class="timeline-block">
+          <div class="timeline-label">This Week</div>
+          <ul>
+            <li>Register on <a class="grant-link" href="https://www.candid.org" target="_blank" rel="noopener">Candid / GuideStar</a> (free, required for grants)</li>
+            <li>Start FARR certification if not in progress</li>
+            <li>Submit <a class="grant-link" href="https://jimmoranfoundation.org/grant/guidelines/" target="_blank" rel="noopener">Jim Moran Foundation LOI</a> (open now)</li>
+            <li>Join <a class="grant-link" href="https://bestfriends.org/network/join-us" target="_blank" rel="noopener">Best Friends Network</a> (free, unlocks Rachael Ray grants)</li>
+            <li>Join <a class="grant-link" href="https://www.bissellpetfoundation.org/grant-information/partners-for-pets/" target="_blank" rel="noopener">BISSELL P4P</a> network (6-month wait starts now)</li>
+          </ul>
+        </div>
+        <div class="timeline-block">
+          <div class="timeline-label">Next 30 Days</div>
+          <ul>
+            <li>Apply <a class="grant-link" href="https://www.banfieldfoundation.org/Banfield-Foundation-Grant-Programs" target="_blank" rel="noopener">Banfield Foundation</a> grant (Jul 1 deadline)</li>
+            <li>Register as Petco Love partner</li>
+            <li>Contact Broward Behavioral Health Coalition</li>
+            <li>Submit inquiry to <a class="grant-link" href="https://hfsf.org" target="_blank" rel="noopener">Health Foundation of South FL</a></li>
+            <li>Attend <a class="grant-link" href="https://maddiesfund.org/grant-opportunities.htm" target="_blank" rel="noopener">Maddie's Fund</a> Community Call (monthly)</li>
+          </ul>
+        </div>
+        <div class="timeline-block">
+          <div class="timeline-label">60 &ndash; 90 Days</div>
+          <ul>
+            <li>Apply Winn-Dixie Romay Davis grant (Aug 31)</li>
+            <li>Apply Rachael Ray grant when cycle opens (~Aug)</li>
+            <li>Register with Broward CoC for HUD grants</li>
+            <li>Monitor SAMHSA BCOR for FY2026</li>
+          </ul>
+        </div>
+        <div class="timeline-block">
+          <div class="timeline-label">6 &ndash; 12 Months</div>
+          <ul>
+            <li>BISSELL grants eligible (~Nov 2026)</li>
+            <li>Petco Love animal welfare cycle (Feb 2027)</li>
+            <li>Second Chance Act if serving justice-involved</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════ SLIDE 13 — CLOSING ═══════════════════════════════════════ -->
+  <div class="slide slide-closing" data-slide="12">
+    <div class="bg-pattern"></div>
+    <div class="logo-container-small" style="margin: 0 auto 30px;">
+      <img src="logo_original.jpg" alt="Logo" onerror="this.parentElement.innerHTML='<span style=&quot;font-size:2.2rem;color:var(--teal)&quot;>&#x1f43e;</span>'">
+    </div>
+    <h2 style="font-size: 2.4rem; margin-bottom: 10px;">We are here to make this as easy as possible.</h2>
+    <div class="gradient-line wide" style="margin: 20px auto;"></div>
+    <p style="font-size: 1.5rem; color: var(--white-80); font-weight: 300; margin-bottom: 40px;">You focus on the mission. We handle the tech.</p>
+    <div class="contact-block">
+      <p class="contact-name">Jereme Strange</p>
+      <p class="contact-company">Strange Advanced Marketing</p>
+      <p style="margin-top: 10px; color: var(--white-60);">ajsupplycollc@gmail.com</p>
+    </div>
+  </div>
+
+</div>
+
+<!-- ═══════════════════════════════════════ PROGRESS BAR ═══════════════════════════════════════ -->
+<div class="progress-bar-container">
+  <span class="slide-counter" id="slideCounter">1 / 13</span>
+  <div class="progress-track">
+    <div class="progress-fill" id="progressFill" style="width: 7.69%;"></div>
+  </div>
+  <div class="dot-indicators" id="dotIndicators"></div>
+  <span class="nav-hint" style="margin-left: 20px;">Arrow keys or swipe to navigate</span>
+</div>
+
+<script>
+(function() {
+  var current = 0;
+  var slides = document.querySelectorAll('.slide');
+  var total = slides.length;
+  var counter = document.getElementById('slideCounter');
+  var fill = document.getElementById('progressFill');
+  var dotsContainer = document.getElementById('dotIndicators');
+  var transitioning = false;
+
+  // Build dot indicators
+  for (var i = 0; i < total; i++) {
+    var dot = document.createElement('div');
+    dot.className = 'dot' + (i === 0 ? ' active' : '');
+    dot.setAttribute('data-index', i);
+    dotsContainer.appendChild(dot);
+  }
+  var dots = dotsContainer.querySelectorAll('.dot');
+
+  function updateUI() {
+    counter.textContent = (current + 1) + ' / ' + total;
+    fill.style.width = ((current + 1) / total * 100) + '%';
+    for (var i = 0; i < dots.length; i++) {
+      dots[i].className = 'dot' + (i === current ? ' active' : '');
+    }
+  }
+
+  function goTo(index) {
+    if (index < 0 || index >= total || index === current || transitioning) return;
+    transitioning = true;
+    var direction = index > current ? 1 : -1;
+
+    // Remove active from old slide
+    slides[current].classList.remove('active');
+    if (direction > 0) {
+      slides[current].classList.add('exit-left');
+    }
+
+    // Prepare new slide
+    slides[index].style.transform = direction > 0 ? 'translateX(40px)' : 'translateX(-40px)';
+    slides[index].style.opacity = '0';
+
+    // Force reflow
+    void slides[index].offsetWidth;
+
+    // Activate new slide
+    slides[index].classList.add('active');
+    slides[index].style.transform = '';
+    slides[index].style.opacity = '';
+
+    var oldIndex = current;
+    current = index;
+    updateUI();
+
+    setTimeout(function() {
+      slides[oldIndex].classList.remove('exit-left');
+      slides[oldIndex].style.transform = '';
+      slides[oldIndex].style.opacity = '';
+      transitioning = false;
+    }, 500);
+  }
+
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'ArrowRight' || e.key === 'ArrowDown' || e.key === ' ') {
+      e.preventDefault();
+      goTo(current + 1);
+    } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
+      e.preventDefault();
+      goTo(current - 1);
+    } else if (e.key === 'Home') {
+      e.preventDefault();
+      goTo(0);
+    } else if (e.key === 'End') {
+      e.preventDefault();
+      goTo(total - 1);
+    }
+  });
+
+  // Click on dots to navigate
+  dotsContainer.addEventListener('click', function(e) {
+    if (e.target.classList.contains('dot')) {
+      goTo(parseInt(e.target.getAttribute('data-index')));
+    }
+  });
+
+  // Click left/right halves of screen to navigate (skip if clicking a link)
+  document.addEventListener('click', function(e) {
+    if (e.target.closest('.progress-bar-container')) return;
+    if (e.target.closest('a')) return;
+    if (e.clientX > window.innerWidth * 0.65) {
+      goTo(current + 1);
+    } else if (e.clientX < window.innerWidth * 0.35) {
+      goTo(current - 1);
+    }
+  });
+
+  // ── Touch / Swipe Support ──
+  var touchStartX = 0;
+  var touchStartY = 0;
+  var touchEndX = 0;
+  var touchEndY = 0;
+  var touchStartTime = 0;
+  var minSwipeDistance = 50;
+  var maxSwipeTime = 500;
+
+  document.addEventListener('touchstart', function(e) {
+    touchStartX = e.changedTouches[0].screenX;
+    touchStartY = e.changedTouches[0].screenY;
+    touchStartTime = Date.now();
+  }, { passive: true });
+
+  document.addEventListener('touchend', function(e) {
+    // Skip if touching a link or interactive element
+    if (e.target.closest('a') || e.target.closest('.progress-bar-container')) return;
+
+    touchEndX = e.changedTouches[0].screenX;
+    touchEndY = e.changedTouches[0].screenY;
+    var elapsed = Date.now() - touchStartTime;
+    var diffX = touchEndX - touchStartX;
+    var diffY = touchEndY - touchStartY;
+
+    // Only register swipe if horizontal movement > vertical (not scrolling)
+    if (Math.abs(diffX) > Math.abs(diffY) && Math.abs(diffX) > minSwipeDistance && elapsed < maxSwipeTime) {
+      if (diffX < 0) {
+        goTo(current + 1); // swipe left = next
+      } else {
+        goTo(current - 1); // swipe right = prev
+      }
+    }
+  }, { passive: true });
+
+  updateUI();
+})();
+</script>
+
+</body>
+</html>
