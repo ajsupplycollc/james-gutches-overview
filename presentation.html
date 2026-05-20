@@ -1573,15 +1573,25 @@ a.grant-link.amber-link:hover {
   var touchStartTime = 0;
   var minSwipeDistance = 50;
   var maxSwipeTime = 500;
+  var isHorizontalSwipe = false;
 
   document.addEventListener('touchstart', function(e) {
     touchStartX = e.changedTouches[0].screenX;
     touchStartY = e.changedTouches[0].screenY;
     touchStartTime = Date.now();
+    isHorizontalSwipe = false;
   }, { passive: true });
 
+  document.addEventListener('touchmove', function(e) {
+    var diffX = e.changedTouches[0].screenX - touchStartX;
+    var diffY = e.changedTouches[0].screenY - touchStartY;
+    if (Math.abs(diffX) > 10 && Math.abs(diffX) > Math.abs(diffY)) {
+      isHorizontalSwipe = true;
+      e.preventDefault();
+    }
+  }, { passive: false });
+
   document.addEventListener('touchend', function(e) {
-    // Skip if touching a link or interactive element
     if (e.target.closest('a') || e.target.closest('.progress-bar-container')) return;
 
     touchEndX = e.changedTouches[0].screenX;
@@ -1590,12 +1600,11 @@ a.grant-link.amber-link:hover {
     var diffX = touchEndX - touchStartX;
     var diffY = touchEndY - touchStartY;
 
-    // Only register swipe if horizontal movement > vertical (not scrolling)
     if (Math.abs(diffX) > Math.abs(diffY) && Math.abs(diffX) > minSwipeDistance && elapsed < maxSwipeTime) {
       if (diffX < 0) {
-        goTo(current + 1); // swipe left = next
+        goTo(current + 1);
       } else {
-        goTo(current - 1); // swipe right = prev
+        goTo(current - 1);
       }
     }
   }, { passive: true });
